@@ -1,6 +1,10 @@
+// Create Items Array
 var items = [];
+
+// get table element from HTML
 var tableBody = document.getElementById("cartTableBody");
 
+// Setup Price Map
 const prices = [
   {
     item: "apple",
@@ -12,6 +16,7 @@ const prices = [
   },
 ];
 
+// Add to Cart Function
 function add_toCart() {
   var item = { item, quan };
   item.item = document.getElementById("item").value;
@@ -31,6 +36,7 @@ function add_toCart() {
     "</tr>";
 }
 
+// Sum up total price function
 function total_Price(price_map) {
   var sum = 0;
   var totalAmount = document.getElementById("totalAmount");
@@ -46,15 +52,9 @@ function total_Price(price_map) {
   totalAmount.innerHTML = sum;
 }
 
-function size_ofCart() {
-  var size = items.length;
-  console.log("Cart size is", size);
-}
-
+// Console Log Each items in the cart
 function get_Cart() {
   for (item in items) {
     console.log(items[item].item, "*", items[item].quan);
   }
 }
-
-total_Price(prices);
