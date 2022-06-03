@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div>
+      <form>
+        <label>Item</label>
+        <input type="text" id="item" placeholder="ex: apple" />
+        <label>Quantity</label>
+        <input type="number" id="quan" placeholder="ex: 2" />
+        <a onclick="add_toCart(); total_Price(prices);">Submit</a>
+      </form>
+      <table class="tbl-cart" cellpadding="10" cellspacing="1">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th class="text-right" width="5%">Quantity</th>
+          </tr>
+        </thead>
+        <!--  Cart table to load data on "add to cart" action -->
+        <tbody id="cartTableBody"></tbody>
+        <tfoot>
+          <tr>
+            <td class="text-right">Total:</td>
+            <td id="totalAmount" class="text-right"></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <script src="./src/script.js"></script>
+  </body>
+</html>

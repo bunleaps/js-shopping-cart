@@ -1,0 +1,28 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div {
+  display: flex;
+}
+
+form {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+a {
+  display: inline-block;
+  margin-top: 10px;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid blue;
+}
+
+input {
+  height: 30px;
+  font-size: 18px;
+}
